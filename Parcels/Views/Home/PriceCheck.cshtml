@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Centar Shipping</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Centar Shipping</h1>
+    <p></p>
+    <h3>Package Details:</h3>
+    <p>Length: @Model.Length</p>
+    <p>Width: @Model.Width</p>
+    <p>Height: @Model.Height</p>
+    <p>Weight: @Model.Weight</p>
+    <p>Volume: @Model.FindVolume()</p>
+    <p>Price: @Model.CostToShip()</p>
+    <p></p>
+    <a href="/order">Ship a Different Package</a>
+    <p></p>
+    <a href="/">Home Page</a>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Centar Shipping</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Centar Shipping</h1>
+    <p></p>
+    <h3>Please fill out this information about your package.</h3>
+    <form action="/check" method="post">
+      <label for="length">Package Length (rounding up to the nearest 1/4th inch):</label>
+      <input type="number" name="length" id="length" step="0.25" min="0.25" max="36" placeholder="0">
+      <p></p>
+      <label for="width">Package Width (rounding up to the nearest 1/4th inch):</label>
+      <input type="number" name="width" id="width" step="0.25" min="0.25" max="36" placeholder="0">
+      <p></p>
+      <label for="height">Package Height (rounding up to the nearest 1/4th inch):</label>
+      <input type="number" name="height" id="height" step="0.25" min="0.25" max="36" placeholder="0">
+      <p></p>
+      <label for="weight">Package Weight (rounding up to the nearest 1/10th pound):</label>
+      <input type="number" name="weight" id="weight" step="0.1" min="0.1" max="50" placeholder="0">
+      <p></p>
+      <button type="submit">Check Price</button>
+    </form>
+    <p></p>
+    <a href="/">Home Page</a>
+  </body>
+</html>
